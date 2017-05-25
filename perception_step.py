@@ -5,7 +5,7 @@ import numpy as np
 # Read in the image
 # There are six more images available for reading
 # called sample1-6.jpg, feel free to experiment with the others!
-image = mpimg.imread('sample4.jpg')
+image = mpimg.imread('sample.jpg')
 
 # Define a function to perform a color threshold
 # Default thresholds of 0 should return a binary image with all pixels set to 1
