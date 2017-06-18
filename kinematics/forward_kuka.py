@@ -139,11 +139,11 @@ P_EE = Matrix([[-0.18685],[2.1447],[1.9465]])
 
 P_WC = simplify(P_EE - 0.303 * T0_7[0:3, 0:3] * Matrix([[0],[0],[1]]))
 
-print("Print P_WC")
-print (P_WC)
+#print("Print P_WC")
+#print (P_WC)
 #P_WC_num = P_WC.evalf(subs={q1: 0, q2: 0, q3: 0, q4: 0, q5: 0, q6:0, q7:0})
-P_WC_num = P_WC.evalf(subs={q4: 0, q5: 0, q6:0, q7:0})
-print(P_WC_num)
+#P_WC_num = P_WC.evalf(subs={q4: 0, q5: 0, q6:0, q7:0})
+#print(P_WC_num)
 
 XC = 1.85
 YC = 0
