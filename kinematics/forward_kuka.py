@@ -127,27 +127,32 @@ T0_5 = simplify(T0_1 * T1_2 * T2_3 * T3_4 * T4_5)
 print("Print 0_2")
 print(T0_2.evalf(subs={q1: 0, q2: 0, q3: 0, q4: 0, q5: 0, q6:0, q7:0}))
 
-print("Print 0_5")
-print(T0_5.evalf(subs={q1: 0, q2: 0, q3: 0, q4: 0, q5: 0, q6:0, q7:0}))
+#print("Print 0_5")
+#print(T0_5)
+print("Print 0_5 (num)")
+print(T0_5.evalf(subs={q1: 0, q2: 0, q3: -1.2, q4: 0, q5: 0, q6:0, q7:0}))
 
 #print("Print T_total")
 #print(T_total.e3valf(subs={q1: 1.44, q2: 0.4, q3: -2.88, q4: 4.3, q5: 1.70, q6:2.25, q7:0}))
 
 
-#P_EE = Matrix([[2.153],[0],[1.946]])
-P_EE = Matrix([[-0.18685],[2.1447],[1.9465]])
+P_EE = Matrix([[2.153],[0],[1.946]])
+#P_EE = Matrix([[-0.18685],[2.1447],[1.9465]])
 
 P_WC = simplify(P_EE - 0.303 * T0_7[0:3, 0:3] * Matrix([[0],[0],[1]]))
 
 #print("Print P_WC")
 #print (P_WC)
-#P_WC_num = P_WC.evalf(subs={q1: 0, q2: 0, q3: 0, q4: 0, q5: 0, q6:0, q7:0})
-#P_WC_num = P_WC.evalf(subs={q4: 0, q5: 0, q6:0, q7:0})
-#print(P_WC_num)
+P_WC_num = P_WC.evalf(subs={q1: 0, q2: 0, q3: 0, q4: 0, q5: 0, q6:0, q7:0})
+#P_WC_num_q47 = P_WC.evalf(subs={q4: 0, q5: 0, q6:0, q7:0})
+print("P_WC_num", P_WC_num)
+#print("P_WC_num_q47", P_WC_num_q47)
 
 XC = 1.85
 YC = 0
 ZC = 1.946
 
-q1 = atan2(YC, XC)
+q1 = atan2(ZC, XC)
 #print ("Q1: ", q1)
+
+#print(simplify(T0_7[0:3, 0:3] * Matrix([[0],[0],[1]])))
