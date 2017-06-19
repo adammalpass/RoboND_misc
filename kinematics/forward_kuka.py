@@ -130,7 +130,7 @@ print(T0_2.evalf(subs={q1: 0, q2: 0, q3: 0, q4: 0, q5: 0, q6:0, q7:0}))
 #print("Print 0_5")
 #print(T0_5)
 print("Print 0_5 (num)")
-print(T0_5.evalf(subs={q1: 0, q2: 0, q3: -1.2, q4: 0, q5: 0, q6:0, q7:0}))
+print(T0_5.evalf(subs={q1: 0, q2: -1.1, q3: -1.7, q4: 0, q5: 0, q6:0, q7:0}))
 
 #print("Print T_total")
 #print(T_total.e3valf(subs={q1: 1.44, q2: 0.4, q3: -2.88, q4: 4.3, q5: 1.70, q6:2.25, q7:0}))
