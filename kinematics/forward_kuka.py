@@ -76,6 +76,13 @@ T6_7 = Matrix([[             cos(q7),            -sin(q7),            0,        
 
 T6_7 = T6_7.subs(s)
 
+print("T0_1", simplify(T0_1))
+print("T1_2", simplify(T1_2))
+print("T2_3", simplify(T2_3))
+print("T3_4", simplify(T3_4))
+print("T4_5", simplify(T4_5))
+print("T5_6", simplify(T5_6))
+print("T6_7", simplify(T6_7))
 
 
 # Transform from base link to end effector
